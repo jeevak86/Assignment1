@@ -1,0 +1,28 @@
+class Vehicle {
+    String brand;
+    void start() {
+        System.out.println("Vehicle started");
+    }
+}
+class Car extends Vehicle {
+    void showCar() {
+        System.out.println("Car brand: " + brand);
+    }
+}
+class Bike extends Vehicle {
+    void showBike() {
+        System.out.println("Bike brand: " + brand);
+    }
+}
+class VehicleMain {
+    public static void main(String[] args) {
+        Car c = new Car();
+        c.brand = "Honda";
+        c.start();
+        c.showCar();
+        Bike b = new Bike();
+        b.brand = "Yamaha";
+        b.start();
+        b.showBike();
+    }
+}
